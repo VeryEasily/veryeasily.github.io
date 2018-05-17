@@ -1,5 +1,6 @@
 // Uses martial pallett
 $redorange: #ff5722;
+$blue: #2196f3;
 
 html {
   font-family: sans-serif;
@@ -188,7 +189,7 @@ textarea {
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 * {
   box-sizing: inherit;
@@ -624,4 +625,9 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.main-background {
+  background-color: $blue;
+  min-height: 100vh;
 }

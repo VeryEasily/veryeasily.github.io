@@ -6,7 +6,7 @@ import Header from '../components/header'
 import './index.scss'
 
 const Layout = ({ children, data }) => (
-  <div>
+  <div className="main-background">
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
