@@ -1,6 +1,5 @@
-FROM node:latest
-RUN npm install -g gatsby-cli \
-  && apt-get update && apt-get install -y wget curl vim-nox \
+FROM node:10-stretch
+RUN apt-get update && apt-get install -y wget curl vim-nox \
   && mkdir -p /root/.vim/autoload /root/.vim/undo /root/.vim/backups /root/.vim/swaps \
   && mkdir -p /tmp/downloads \
   && cd /tmp/downloads \
@@ -8,14 +7,15 @@ RUN npm install -g gatsby-cli \
   && tar -zxvf ripgrep-0.8.1-x86_64-unknown-linux-musl.tar.gz \
   && cd ripgrep-0.8.1-x86_64-unknown-linux-musl \
   && mv rg /usr/bin/rg && mv ./doc/rg.1 /usr/share/man/man1/rg.1 \
-  && cd /tmp && rm -rf downloads
+  && cd /tmp && rm -rf downloads \
+  && npm install -g gatsby-cli
 
 WORKDIR /root
-ADD [".tools/.vimrc*", ".tools/.vim", ".tools/screen-256color.ti", "/root/"]
+ADD [".tools/.vimrc*", ".tools/.vim", ".tools/screen-256color.ti", "entry-point.sh", "/root/"]
 RUN tic ./screen-256color.ti && rm screen-256color.ti \
   && vim +PlugInstall +qall
 
 WORKDIR /app/elju
-
 EXPOSE 8000
-CMD ["/bin/bash"]
+ENTRYPOINT ["/bin/sh", "/root/entry-point.sh"]
+CMD ["yarn", "develop"]
