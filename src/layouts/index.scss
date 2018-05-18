@@ -4,6 +4,10 @@ $blue: #2196f3;
 $green: #8bc34a;
 $purple: #9c27b0;
 
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -630,16 +634,16 @@ pre tt:after {
 }
 
 .main-background {
-  animation: pulse-weird 5s infinite;
+  animation: pulse-weird 5s infinite, fadey 30s infinite;
   min-height: 100vh;
 }
 
 .article-body {
-  animation: pulse 5s infinite;
+  animation: pulse 5s infinite, fadey 7s infinite;
 }
 
 .site-header {
-  animation: pulse-two 5s infinite;
+  animation: pulse-two 5s infinite, fadey 5.2s infinite;
 }
 
 @keyframes pulse-two {
@@ -675,5 +679,23 @@ pre tt:after {
   }
   100% {
     background-color: $green;
+  }
+}
+
+@keyframes fadey {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
