@@ -1,6 +1,8 @@
 // Uses martial pallett
 $redorange: #ff5722;
 $blue: #2196f3;
+$green: #8bc34a;
+$purple: #9c27b0;
 
 html {
   font-family: sans-serif;
@@ -628,6 +630,50 @@ pre tt:after {
 }
 
 .main-background {
-  background-color: $blue;
+  animation: pulse-weird 5s infinite;
   min-height: 100vh;
+}
+
+.article-body {
+  animation: pulse 5s infinite;
+}
+
+.site-header {
+  animation: pulse-two 5s infinite;
+}
+
+@keyframes pulse-two {
+  0% {
+    background-color: $blue;
+  }
+  50% {
+    background-color: $redorange;
+  }
+  100% {
+    background-color: $blue;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: $redorange;
+  }
+  50% {
+    background-color: $blue;
+  }
+  100% {
+    background-color: $redorange;
+  }
+}
+
+@keyframes pulse-weird {
+  0% {
+    background-color: $green;
+  }
+  50% {
+    background-color: $purple;
+  }
+  100% {
+    background-color: $green;
+  }
 }

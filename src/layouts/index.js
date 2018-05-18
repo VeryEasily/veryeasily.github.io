@@ -16,6 +16,7 @@ const Layout = ({ children, data }) => (
     />
     <Header siteTitle={data.site.siteMetadata.title} />
     <div
+      className="article-body"
       style={{
         margin: '0 auto',
         maxWidth: 960,
