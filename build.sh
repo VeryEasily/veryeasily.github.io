@@ -5,6 +5,7 @@ _save-master() {
   docker-compose stop
   [[ -d ./public ]] && rm -rf ./public
   docker-compose run --rm app gatsby build
+  sudo chown -R mors:mors ./
   git stash && stash_saved=true
   git checkout master
   sudo cp -rf ./public/* ./
