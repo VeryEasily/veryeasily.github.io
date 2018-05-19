@@ -10,9 +10,6 @@ _save-master() {
   sudo cp -rf ./public/* ./
   sudo chown -R mors:mors ./
   git add . && git commit -am "Update"
-  git push origin master
-  git checkout lu/main/code
-  [ -z ${stash_saved+x} ] || git stash pop
 }
 
 _save-master
