@@ -10,7 +10,7 @@ const IndexPage = () => (
       >(@veryeasily)</a>
     </h1>
     <h1 />
-    <Link to="/code/">Code</Link>
+    <Link to="/code/">CODE</Link>
   </div>
 )
 
