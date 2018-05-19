@@ -4,8 +4,6 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile.app
-    environment:
-      - CHOKIDAR_USEPOLLING=1
     image: elju-app:0.1.0
     ports:
       - 8000:8000

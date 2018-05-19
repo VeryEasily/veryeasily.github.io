@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Luke Underwood V Personal Site',
+    title: 'PROJECTS ETC...',
   },
   plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-sass'],
 }
