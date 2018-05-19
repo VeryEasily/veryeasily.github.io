@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{104:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Luke Underwood V Personal Site"}}},layoutContext:{}}}});
-//# sourceMappingURL=path----32c6b13269c4b38549cf.js.map
