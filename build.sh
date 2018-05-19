@@ -11,9 +11,11 @@ _save-master() {
   git stash clear && git stash
 
   git checkout master
-  sudo cp -rf ./public/* ./
-  sudo chown -R mors:mors ./
-  git add . && git commit -am "Update"
+
+  # Restow the build
+  stow -R public
+
+  git add -A && git commit -am "Save new build to master on $(date +"%Y-%m-%d")"
   git push origin master
 
   git checkout lu/main/code
