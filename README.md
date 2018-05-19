@@ -1,2 +1,2 @@
 # elju.github.io
-V PERSONAL
+V PERSONAL etc 
