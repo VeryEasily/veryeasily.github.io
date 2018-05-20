@@ -4,7 +4,7 @@ _save-master() {
   local stash_saved
   docker-compose stop
   [[ -d ./public ]] && rm -rf ./public
-  docker-compose run --rm app gatsby build
+  docker-compose run --rm app gatsby build-prefix
   sudo chown -R mors:mors ./
 
   echo "Clearing git stash!"
