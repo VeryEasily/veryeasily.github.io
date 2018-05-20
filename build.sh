@@ -18,7 +18,7 @@ _save-master() {
   git add -A && git commit -am "Save new build to master on $(date +"%Y-%m-%d")"
   git push origin master
 
-  git checkout lu/main/code
+  git checkout dev
   git stash list && echo "Recovering save from stash..." && git stash pop
 }
 
