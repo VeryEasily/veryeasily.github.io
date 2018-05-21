@@ -3,6 +3,7 @@
 _save-master() {
   local stash_saved
   docker-compose stop
+  sudo chown -R mors:mors ./
   [[ -d ./public ]] && rm -rf ./public
   docker-compose run --rm app gatsby build --prefix-paths
   sudo chown -R mors:mors ./
