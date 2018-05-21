@@ -1,16 +1,20 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-dd2a33289e0595dde2c6.js",
-      "component---src-pages-index-js-dd2a33289e0595dde2c6.js.map"
+      "component---src-pages-index-js-91f50c43f51b96634109.js",
+      "component---src-pages-index-js-91f50c43f51b96634109.js.map"
     ],
     "path---": [
-      "path----d5c275e2ecfb409a3e3c.js",
-      "path----d5c275e2ecfb409a3e3c.js.map"
+      "path----d916305232a28848bf09.js",
+      "path----d916305232a28848bf09.js.map"
+    ],
+    "path---art": [
+      "path---art-a0e39f21c11f6a62c5ab.js",
+      "path---art-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-b38cd9010677c0667f03.js",
-      "component---src-layouts-index-js-b38cd9010677c0667f03.js.map"
+      "component---src-layouts-index-js-d3051758074516948a4a.js",
+      "component---src-layouts-index-js-d3051758074516948a4a.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -20,29 +24,41 @@
       "path---code-a0e39f21c11f6a62c5ab.js",
       "path---code-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---writing": [
+      "path---writing-a0e39f21c11f6a62c5ab.js",
+      "path---writing-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "component---src-pages-code-js": [
-      "component---src-pages-code-js-a2e767a8626086952217.js",
-      "component---src-pages-code-js-a2e767a8626086952217.js.map"
+      "component---src-pages-code-js-32b853863895272d36bf.js",
+      "component---src-pages-code-js-32b853863895272d36bf.js.map"
     ],
     "commons": [
-      "commons-0c961af4250069caef0a.js",
-      "commons-0c961af4250069caef0a.js.map"
+      "commons-c4c741337ccf87c32ab1.js",
+      "commons-c4c741337ccf87c32ab1.js.map"
+    ],
+    "component---src-pages-writing-js": [
+      "component---src-pages-writing-js-ca9669973f2a69ea9176.js",
+      "component---src-pages-writing-js-ca9669973f2a69ea9176.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-5b15a0c691920aae5f9d.js",
-      "app-5b15a0c691920aae5f9d.js.map"
+      "app-3f584313101ca8c8f307.js",
+      "app-3f584313101ca8c8f307.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-art-js": [
+      "component---src-pages-art-js-3aef5fcc1c5384690aaf.js",
+      "component---src-pages-art-js-3aef5fcc1c5384690aaf.js.map"
     ]
   }
 }
