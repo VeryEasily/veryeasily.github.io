@@ -2,15 +2,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const IndexPage = () => (
-  <div>
-    <h1>
-      Luke Underwood&nbsp;<a
-      href="https://github.com/veryeasily"
-      target="_blank"
-      >(@veryeasily)</a>
-    </h1>
-    <h1 />
-    <Link to="/code/">CODE</Link>
+  <div className='home-page'>
+    <div><Link className='home-page__link' to="/art/">ART</Link></div>
+    <div><Link className='home-page__link' to="/code/">CODE</Link></div>
+    <div><Link className='home-page__link' to="/writing/">WRITING</Link></div>
   </div>
 )
 

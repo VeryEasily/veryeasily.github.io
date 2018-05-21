@@ -2,10 +2,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 import resume from './resume.pdf'
 
-const CodePage = () => (
+const WritingPage = () => (
   <div>
-    <p>Resume is <a href={resume}>here</a></p>
+    WRITING PAGE
   </div>
 )
 
-export default CodePage
+export default WritingPage
