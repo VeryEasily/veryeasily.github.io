@@ -9,35 +9,35 @@ const Layout = ({ children, data }) => {
   console.log(data)
   return (
     <div className="main-background">
-    <div className="main-background__top">
-    <Helmet
-    title={data.site.siteMetadata.title}
-    meta={[
-      { name: 'description', content: 'Sample' },
-      { name: 'keywords', content: 'sample, something' },
-    ]}
-    link={[
-      { href: "https://fonts.googleapis.com/css?family=Lato|Permanent+Marker", rel: "stylesheet" }
-    ]}
-    />
-    <Header
-      siteTitle={data.site.siteMetadata.title}
-      siteGithub={data.site.siteMetadata.github} />
-    <div
-      className="article-body"
-      style={{
-        margin: '0 auto',
-          maxWidth: 960,
-          padding: '.6rem .78rem',
-      }}>
-      {children()}
-    </div>
-    </div>
-    <footer className="main-background__bottom footer">
-    <span className="footer__content">
-    YOOOOOOOOOO
-    </span>
-    </footer>
+      <div className="main-background__top">
+        <Helmet
+        title={data.site.siteMetadata.title}
+        meta={[
+          { name: 'description', content: 'Sample' },
+          { name: 'keywords', content: 'sample, something' },
+        ]}
+        link={[
+          { href: "https://fonts.googleapis.com/css?family=Mr+De+Haviland|Permanent+Marker", rel: "stylesheet" }
+        ]}
+        />
+        {/* <Header
+          siteTitle={data.site.siteMetadata.title}
+          siteGithub={data.site.siteMetadata.github} /> */}
+        <div
+          className="article-body"
+          style={{
+            margin: '0 auto',
+              maxWidth: 960,
+              padding: '.6rem .78rem',
+          }}>
+          {children()}
+        </div>
+      </div>
+      {/* <footer className="main-background__bottom footer">
+          <span className="footer__content">
+          YOOOOOOOOOO
+          </span>
+        </footer> */}
     </div>
   )
 }

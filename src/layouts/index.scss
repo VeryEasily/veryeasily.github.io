@@ -5,7 +5,7 @@ $green: #8bc34a;
 $purple: #9c27b0;
 
 $display-text: "Permanent Marker";
-$body-text: "Lato";
+$body-text: "Mr De Haviland";
 
 $opacity-amount: 0.65;
 
@@ -648,7 +648,7 @@ pre tt:after {
 }
 
 .main-background {
-  animation: pulse-weird 5s infinite, fadey 30s infinite;
+  animation: pulse-weird 45s infinite, fadey 270s infinite;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -657,11 +657,12 @@ pre tt:after {
 
 .article-body {
   width: 100%;
-  animation: pulse 5s infinite, fadey 7s infinite;
+  height: 100vh;
+  animation: pulse 45s infinite, fadey 63s infinite;
 }
 
 .site-header {
-  animation: pulse-two 5s infinite, fadey 5.2s infinite;
+  animation: pulse-two 45s infinite, fadey 46.8s infinite;
 }
 
 @keyframes pulse-two {
@@ -744,7 +745,26 @@ pre tt:after {
 }
 
 .home-page {
-  &__link {
-    @extend %body-text;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__name {
+    @extend %headline-1;
+    font-family: $body-text;
+    text-align: center;
+    font-size: 3.5rem;
   }
+  &__link-holder {
+    text-align: center;
+  }
+  &__link {
+    @extend %headline-1;
+    text-align: center;
+  }
+}
+
+.up {
+  margin-top:7px;
 }

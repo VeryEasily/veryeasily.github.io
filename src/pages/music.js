@@ -2,10 +2,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 import resume from './resume.pdf'
 
-const WritingPage = () => (
+const MusicPage = () => (
   <div>
-    WRITING PAGE
+    MUSIC PAGE
   </div>
 )
 
-export default WritingPage
+export default MusicPage
