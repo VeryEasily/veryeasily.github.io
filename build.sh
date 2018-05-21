@@ -15,6 +15,7 @@ _save-master() {
 
   # Restow the build
   stow -R public
+  stow -t $(pwd)/et-the-fog -R public
 
   git add -A && git commit -am "Save new build to master on $(date +"%Y-%m-%d")"
   git push origin master
