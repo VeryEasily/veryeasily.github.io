@@ -3,6 +3,10 @@ $redorange: #ff5722;
 $blue: #2196f3;
 $green: #8bc34a;
 $purple: #9c27b0;
+$red:#E91E63;
+$lime-green:#CDDC39;
+$music-blue:#03A9F4;
+$etc-green:#009688;
 
 $display-text: "Permanent Marker";
 $body-text: "Mr De Haviland";
@@ -767,4 +771,18 @@ pre tt:after {
 
 .up {
   margin-top:7px;
+}
+
+.art {
+  color: $red;
+}
+
+.code {
+  color:$lime-green;
+}
+.music {
+  color:$music-blue;
+}
+.etc {
+  color:$etc-green;
 }

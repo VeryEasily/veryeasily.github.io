@@ -5,16 +5,16 @@ const IndexPage = () => (
   <div className='home-page'>
     <div className='up'>
       <div className='home-page__link-holder'>
-        <Link className='home-page__link' to="/art/">ART</Link>
+        <Link className='home-page__link art' to="/art/">ART</Link>
       </div>
       <div className='home-page__link-holder'>
-        <Link className='home-page__link' to="/code/">CODE</Link>
+        <Link className='home-page__link code' to="/code/">CODE</Link>
       </div>
       <div className='home-page__link-holder'>
-        <Link className='home-page__link' to="/music/">MUSIC</Link>
+        <Link className='home-page__link music' to="/music/">MUSIC</Link>
       </div>
       <div className='home-page__link-holder'>
-        <Link className='home-page__link' to="/etc/">ETC</Link>
+        <Link className='home-page__link etc' to="/etc/">ETC</Link>
       </div>
     </div>
     <div className='mid'>
