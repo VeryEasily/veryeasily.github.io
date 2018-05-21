@@ -1,2 +1,0 @@
-webpackJsonp([0xa27c644eea74],{46:function(e,t,u){e.exports=u.p+"static/resume.c51be18a.pdf"},203:function(e,t,u){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var a=u(4),c=n(a),r=u(47),f=(n(r),u(46)),l=(n(f),function(){return c.default.createElement("div",null,"WRITING PAGE")});t.default=l,e.exports=t.default}});
-//# sourceMappingURL=component---src-pages-writing-js-ca9669973f2a69ea9176.js.map
