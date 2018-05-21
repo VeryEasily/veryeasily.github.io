@@ -1,0 +1,2 @@
+webpackJsonp([0x968739c49253],{201:function(e,t,u){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var n=u(4),a=l(n),r=u(47),f=(l(r),u(46)),c=l(f),d=function(){return a.default.createElement("div",null,a.default.createElement("p",null,"Resume is ",a.default.createElement("a",{href:c.default},"here")))};t.default=d,e.exports=t.default},46:function(e,t,u){e.exports=u.p+"static/resume.c51be18a.pdf"}});
+//# sourceMappingURL=component---src-pages-code-js-32b853863895272d36bf.js.map

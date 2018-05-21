@@ -1,0 +1,2 @@
+webpackJsonp([0xf6ce7deff948],{200:function(e,t,u){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var f=u(4),c=n(f),r=u(47),a=(n(r),u(46)),d=(n(a),function(){return c.default.createElement("div",null,"ART PAGE")});t.default=d,e.exports=t.default},46:function(e,t,u){e.exports=u.p+"static/resume.c51be18a.pdf"}});
+//# sourceMappingURL=component---src-pages-art-js-3aef5fcc1c5384690aaf.js.map
