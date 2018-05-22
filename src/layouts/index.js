@@ -26,9 +26,7 @@ const Layout = ({ children, data }) => {
         <div
           className="article-body"
           style={{
-            margin: '0 auto',
-              maxWidth: 960,
-              padding: 0,
+            padding: 0
           }}>
           {children()}
         </div>
