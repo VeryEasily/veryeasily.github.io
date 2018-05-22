@@ -1,0 +1,55 @@
+@import "variables";
+
+@keyframes pulse-two {
+  0% {
+    background-color: mix($white, $blue, 50%);
+  }
+  50% {
+    background-color: mix($white, $redorange, 50%);
+  }
+  100% {
+    background-color: mix($white, $blue, 50%);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: mix($white, $redorange, 50%);
+  }
+  50% {
+    background-color: mix($white, $blue, 50%);
+  }
+  100% {
+    background-color: mix($white, $redorange, 50%);
+  }
+}
+
+@keyframes pulse-weird {
+  0% {
+    background-color: mix($white, $green, 50%);
+  }
+  50% {
+    background-color: mix($white, $teal, 50%);
+  }
+  100% {
+    background-color: mix($white, $green, 50%);
+  }
+}
+
+@keyframes fadey {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: $opacity-amount;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: $opacity-amount;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
-import './index.scss'
+import '../scss/index.scss'
 
 const Layout = ({ children, data }) => {
   console.log(data)
@@ -28,7 +28,7 @@ const Layout = ({ children, data }) => {
           style={{
             margin: '0 auto',
               maxWidth: 960,
-              padding: '.6rem .78rem',
+              padding: 0,
           }}>
           {children()}
         </div>

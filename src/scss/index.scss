@@ -1,19 +1,25 @@
 // Uses martial pallett
-$redorange: #ff5722;
-$blue: #2196f3;
-$green: #8bc34a;
-$purple: #9c27b0;
-$red:#E91E63;
-$lime-green:#CDDC39;
-$music-blue:#03A9F4;
-$etc-green:#009688;
-$black: #000000;
-$white: #888888;
+
+@import "fontface";
+@import "variables";
+@import "animations";
 
 $display-text: "Permanent Marker";
-$body-text: "Mr De Haviland";
+$body-text: "Visual";
 
 $opacity-amount: 1;
+
+$black:      #000000;
+$white:      #888888;
+
+$blue:       #2196f3;
+$teal:       #009688;
+$green:      #8bc34a;
+$lime-green: #CDDC39;
+$music-blue: #03A9F4;
+$purple:     #9c27b0;
+$red:        #E91E63;
+$redorange:  #ff5722;
 
 .no-margin-bottom {
   margin-bottom: 0;
@@ -22,6 +28,7 @@ $opacity-amount: 1;
 %headline-1 {
   font-family: $display-text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 40px;
+  color: var($black);
 }
 
 %body-text {
@@ -671,60 +678,6 @@ pre tt:after {
   animation: pulse-two 15s infinite;
 }
 
-@keyframes pulse-two {
-  0% {
-    background-color: $blue;
-  }
-  50% {
-    background-color: $redorange;
-  }
-  100% {
-    background-color: $blue;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    background-color: mix($white, $redorange, 86%);
-  }
-  86% {
-    background-color: mix($white, $blue, 86%);
-  }
-  100% {
-    background-color: mix($white, $redorange, 86%);
-  }
-}
-
-@keyframes pulse-weird {
-  0% {
-    background-color: mix($white, $green, 86%);
-  }
-  86% {
-    background-color: mix($white, $purple, 86%);
-  }
-  100% {
-    background-color: mix($white, $green, 86%);
-  }
-}
-
-@keyframes fadey {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: $opacity-amount;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: $opacity-amount;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .footer {
   margin: 0 auto 5px;
   max-width: 960px;
@@ -751,16 +704,22 @@ pre tt:after {
 }
 
 .home-page {
-  height: 50vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  &__item {
+    flex: 0 0 percentage(1/3);
+  }
 
   &__name {
     @extend %headline-1;
     font-family: $body-text;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 1rem;
+    
+    padding-bottom:50px;
   }
   &__link-holder {
     text-align: center;
@@ -771,8 +730,13 @@ pre tt:after {
   }
 }
 
-.up {
-  margin-top:7px;
+.lju-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.nav-wrapper {
+  padding: 50px 0 0;
 }
 
 .art {
@@ -786,5 +750,5 @@ pre tt:after {
   color:$music-blue;
 }
 .etc {
-  color:$etc-green;
+  color: $teal;
 }
