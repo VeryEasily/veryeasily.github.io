@@ -7,6 +7,8 @@ $red:#E91E63;
 $lime-green:#CDDC39;
 $music-blue:#03A9F4;
 $etc-green:#009688;
+$black: #000000;
+$white: #888888;
 
 $display-text: "Permanent Marker";
 $body-text: "Mr De Haviland";
@@ -652,7 +654,7 @@ pre tt:after {
 }
 
 .main-background {
-  animation: pulse-weird 45s infinite, fadey 270s infinite;
+  animation: pulse-weird 15s infinite;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -662,11 +664,11 @@ pre tt:after {
 .article-body {
   width: 100%;
   height: 100vh;
-  animation: pulse 45s infinite, fadey 63s infinite;
+  animation: pulse 15s infinite;
 }
 
 .site-header {
-  animation: pulse-two 45s infinite, fadey 46.8s infinite;
+  animation: pulse-two 15s infinite;
 }
 
 @keyframes pulse-two {
@@ -683,25 +685,25 @@ pre tt:after {
 
 @keyframes pulse {
   0% {
-    background-color: $redorange;
+    background-color: mix($white, $redorange, 86%);
   }
-  50% {
-    background-color: $blue;
+  86% {
+    background-color: mix($white, $blue, 86%);
   }
   100% {
-    background-color: $redorange;
+    background-color: mix($white, $redorange, 86%);
   }
 }
 
 @keyframes pulse-weird {
   0% {
-    background-color: $green;
+    background-color: mix($white, $green, 86%);
   }
-  50% {
-    background-color: $purple;
+  86% {
+    background-color: mix($white, $purple, 86%);
   }
   100% {
-    background-color: $green;
+    background-color: mix($white, $green, 86%);
   }
 }
 
