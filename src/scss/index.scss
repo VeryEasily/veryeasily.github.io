@@ -1,38 +1,11 @@
 // Uses martial pallett
 
-@import "fontface";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.003/web/hack.css");
 @import "variables";
 @import "animations";
 
-$display-text: "Permanent Marker";
-$body-text: "Visual";
-
-$opacity-amount: 1;
-
-$black:      #000000;
-$white:      #888888;
-
-$blue:       #2196f3;
-$teal:       #009688;
-$green:      #8bc34a;
-$lime-green: #CDDC39;
-$music-blue: #03A9F4;
-$purple:     #9c27b0;
-$red:        #E91E63;
-$redorange:  #ff5722;
-
 .no-margin-bottom {
   margin-bottom: 0;
-}
-
-%headline-1 {
-  font-family: $display-text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 40px;
-  color: var($black);
-}
-
-%body-text {
-  font-family: $body-text;
 }
 
 html {
@@ -661,7 +634,7 @@ pre tt:after {
 }
 
 .main-background {
-  animation: pulse-weird 15s infinite;
+  animation: pulse-sides 15s infinite;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -671,11 +644,7 @@ pre tt:after {
 .article-body {
   width: 100%;
   height: 100vh;
-  animation: pulse 15s infinite;
-}
-
-.site-header {
-  animation: pulse-two 15s infinite;
+  animation: pulse-main 15s infinite;
 }
 
 .footer {
@@ -686,12 +655,12 @@ pre tt:after {
   text-align: right;
 
   &__content {
-    @extend %headline-1;
+    @extend %headline2;
   }
 }
 
 .header-container {
-  @extend %headline-1;
+  @extend %headline2;
 
   &__title {
     color: black;
@@ -699,7 +668,7 @@ pre tt:after {
   }
 
   &__github {
-    @extend %headline-1;
+    @extend %headline2;
   }
 }
 
@@ -714,10 +683,8 @@ pre tt:after {
   }
 
   &__name {
-    @extend %headline-1;
-    font-family: $body-text;
+    @extend %headline2;
     text-align: center;
-    font-size: 1rem;
     
     padding-bottom:50px;
   }
@@ -725,7 +692,7 @@ pre tt:after {
     text-align: center;
   }
   &__link {
-    @extend %headline-1;
+    @extend %headline1;
     text-align: center;
   }
 }
