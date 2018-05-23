@@ -698,7 +698,6 @@ pre tt:after {
     @extend %headline2;
 
     text-align: center;
-    display: flex;
     margin-left: 16.66666666%;
     width: 66.666666%;
     padding-bottom: 45px;
@@ -717,6 +716,21 @@ pre tt:after {
   &__link {
     @extend %headline1;
     text-align: center;
+  }
+}
+
+.crazy-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  line-height: 0.8;
+
+  &--title {
+    line-height: 1;
+  }
+
+  &__letter {
+    flex: 1 1 auto;
   }
 }
 
@@ -739,14 +753,22 @@ pre tt:after {
 
 .art {
   color: $red;
+  width: 12.4%;
+  margin-left: 43.8%;
 }
 
 .code {
   color:$lime-green;
+  width: 14%;
+  margin-left: 43%;
 }
 .music {
   color:$music-blue;
+  width: 19%;
+  margin-left: 40.5%;
 }
 .etc {
   color: $teal;
+  width: 12%;
+  margin-left: 44%;
 }
