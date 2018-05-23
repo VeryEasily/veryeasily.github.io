@@ -23,11 +23,7 @@ const Layout = ({ children, data }) => {
         {/* <Header
           siteTitle={data.site.siteMetadata.title}
           siteGithub={data.site.siteMetadata.github} /> */}
-        <div
-          className="article-body"
-          style={{
-            padding: 0
-          }}>
+        <div className="article-body" >
           {children()}
         </div>
       </div>

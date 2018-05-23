@@ -643,19 +643,22 @@ pre tt:after {
   &__top {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 }
 
 .article-body {
-  animation: pulse-main 15s infinite;
   height: 100vh;
-  margin: 0 30px;
+  padding: 0 30px;
+  flex: 1;
+
+  box-sizing: border-box;
 
   width: 100%;
   max-width: 960px;
 
   @media only screen and (max-width: 480px) {
-    margin: 0 20px;
+    padding: 0 20px;
   }
 }
 
@@ -689,25 +692,28 @@ pre tt:after {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 100%;
+  animation: pulse-main 15s infinite;
 
   &__item {
     flex: 0 0 percentage(1/3);
+    align-items: stretch;
   }
 
   &__name {
     @extend %headline2;
 
     text-align: center;
-    margin-left: 16.66666666%;
-    width: 66.666666%;
+    width: 100%;
     padding-bottom: 45px;
     box-sizing: border-box;
     padding: 0 1.5rem 3.8rem;
-    font-size: 40pt;
+    font-size: 42pt;
 
     
     @media only screen and (max-width: 470px) {
       padding-bottom: 20px;
+      font-size: 20pt;
     }
   }
   &__link-holder {
@@ -721,7 +727,7 @@ pre tt:after {
 
 .crazy-link {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   text-decoration: none;
   line-height: 0.8;
 
