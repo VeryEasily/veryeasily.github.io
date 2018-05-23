@@ -25,7 +25,7 @@ _save-master() {
 
   git checkout dev 
 
-  sudo rm -rf ./tmp-build
+  sudo rm -rf ./tmp-public
 
   sudo chown -R mors:mors ./
 
