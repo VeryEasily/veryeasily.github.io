@@ -639,6 +639,7 @@ pre tt:after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 
   &__top {
     display: flex;
@@ -722,6 +723,7 @@ pre tt:after {
   &__link {
     @extend %headline1;
     text-align: center;
+    font-size: 120px;
   }
 }
 
