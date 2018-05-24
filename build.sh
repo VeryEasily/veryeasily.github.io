@@ -19,25 +19,27 @@ _save-master() {
 
   git add ./public
 
-  # git commit -m "Updating site"
+  git status
 
+  git commit -m "Updating site"
+
+  git push origin master
+
+  git checkout dev 
+
+  sudo rm -rf ./tmp-public
+
+  sudo chown -R mors:mors ./
+
+  # Restow the build
+  # stow -R public
+  # stow -t $(pwd)/et-the-fog -R public
+
+  # git add -A && git commit -am "Save new build to master on $(date +"%Y-%m-%d")"
   # git push origin master
 
-  # git checkout dev 
-
-  # sudo rm -rf ./tmp-public
-
-  # sudo chown -R mors:mors ./
-
-  # # Restow the build
-  # # stow -R public
-  # # stow -t $(pwd)/et-the-fog -R public
-
-  # # git add -A && git commit -am "Save new build to master on $(date +"%Y-%m-%d")"
-  # # git push origin master
-
-  # # git checkout dev
-  # # git stash list && echo "Recovering save from stash..." && git stash pop
+  # git checkout dev
+  # git stash list && echo "Recovering save from stash..." && git stash pop
 }
 
 _save-master
