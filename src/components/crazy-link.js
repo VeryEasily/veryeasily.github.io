@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import classNames from 'classnames'
 import { swapLetter } from '../etc/helpers'
+import { EMOJI_SPEED } from '../etc/constants'
 
 export default class CrazyLink extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ export default class CrazyLink extends Component {
   }
 
   componentDidMount() {
-    this.setState({ timer: setInterval(this.updateText, 35) })
+    this.setState({ timer: setInterval(this.updateText, EMOJI_SPEED) })
   }
 
   componentWillUnmount() {

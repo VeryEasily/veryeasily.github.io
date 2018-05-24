@@ -697,7 +697,6 @@ pre tt:after {
   animation: pulse-main 15s infinite;
 
   &__item {
-    flex: 0 0 percentage(1/3);
     align-items: stretch;
   }
 
@@ -756,6 +755,11 @@ pre tt:after {
 .lju-wrapper {
   display: flex;
   flex-direction: column-reverse;
+  pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .nav-wrapper {

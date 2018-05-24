@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import CrazyLink from '../components/crazy-link'
-import { TITLE } from '../etc/constants'
+import { EMOJI_SPEED, TITLE } from '../etc/constants'
 import { swapLetter } from '../etc/helpers'
 
 class IndexPage extends Component {
@@ -20,7 +20,7 @@ class IndexPage extends Component {
   }
 
   componentDidMount() {
-    this.setState({ timer: setInterval(this.updateTitle, 35) })
+    this.setState({ timer: setInterval(this.updateTitle, EMOJI_SPEED) })
   }
 
   componentWillUnmount() {
