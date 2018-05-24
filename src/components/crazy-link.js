@@ -20,7 +20,7 @@ export default class CrazyLink extends Component {
   }
 
   componentDidMount() {
-    this.setState({ timer: setInterval(this.updateText, 10) })
+    this.setState({ timer: setInterval(this.updateText, 35) })
   }
 
   componentWillUnmount() {
@@ -43,9 +43,13 @@ export default class CrazyLink extends Component {
       'crazy-link': true
     }, this.props.className)
 
-    let text = Array.from(this.state.text).map((i, j) => (
-      (<span key={j} className="crazy-link__letter">{i}</span>)
-    ))
+    let text = Array.from(this.state.text).map((i, j) => {
+      let spanClasses = classNames({
+        'crazy-link__letter': true,
+        'crazy-link__emoji': i.codePointAt(0) > 1000
+      })
+      return <span key={j} className={spanClasses}>{i}</span>
+    })
 
     return (
       <Link className={linkClasses} to={this.props.to}>

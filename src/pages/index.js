@@ -20,7 +20,7 @@ class IndexPage extends Component {
   }
 
   componentDidMount() {
-    this.setState({ timer: setInterval(this.updateTitle, 10) })
+    this.setState({ timer: setInterval(this.updateTitle, 35) })
   }
 
   componentWillUnmount() {
