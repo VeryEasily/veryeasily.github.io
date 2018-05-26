@@ -656,15 +656,19 @@ pre tt:after {
   overflow: hidden;
 
   &__top {
-    display: flex;
-    justify-content: center;
-    width: 100%;
     height: inherit;
   }
 }
 
-.article-body {
-  height: inherit;
+.header-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header {
+  height: 100px;
   padding: 0 30px;
   flex: 1;
 
@@ -672,6 +676,16 @@ pre tt:after {
 
   width: 100%;
   max-width: 960px;
+
+  &__nav {
+    display: block;
+    position: fixed;
+
+    bottom: 0;
+    left:   0;
+    right:  0;
+    top:    0;
+  }
 
   @media only screen and (max-width: 768px) {
     padding: 0 20px;
@@ -690,7 +704,7 @@ pre tt:after {
   }
 }
 
-.header-container {
+.site-info {
   @extend %headline2;
 
   &__title {
@@ -703,13 +717,21 @@ pre tt:after {
   }
 }
 
-.home-page {
-  height: inherit;
+.article-body {
+  animation: pulse-main 15s infinite;
+  min-height: 100%;
+  padding: 50px;
+}
+
+.nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  animation: pulse-main 15s infinite;
+  height: 0;
+  width: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
 
   &__item {
     align-items: stretch;

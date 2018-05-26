@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import CrazyLink from '../components/CrazyLink'
 
-import Header from '../components/header'
+import Header from '../components/Header'
+import MainLinkContainer from '../components/MainLinkContainer'
 import '../scss/index.scss'
 
 const Layout = ({ children, data }) => {
-  console.log(data)
   return (
     <div className="main-background">
       <div className="main-background__top">
@@ -20,9 +21,11 @@ const Layout = ({ children, data }) => {
           { href: "https://fonts.googleapis.com/css?family=Mr+De+Haviland|Permanent+Marker", rel: "stylesheet" }
         ]}
         />
-        {/* <Header
+        <Header
           siteTitle={data.site.siteMetadata.title}
-          siteGithub={data.site.siteMetadata.github} /> */}
+          siteGithub={data.site.siteMetadata.github}>
+        </Header>
+        <MainLinkContainer />
         <div className="article-body" >
           {children()}
         </div>

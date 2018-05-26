@@ -53,7 +53,7 @@ export default class CrazyLink extends Component {
     })
 
     return (
-      <Link className={linkClasses} to={this.props.to}>
+      <Link className={linkClasses} activeClassName={this.props.activeClassName} to={this.props.to}>
         {text}
       </Link>
     )
