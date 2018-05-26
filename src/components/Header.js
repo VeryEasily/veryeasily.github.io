@@ -5,37 +5,30 @@ const Header = (props) => {
   let { siteTitle, siteGithub } = props
   return (
     <div
-      className='header-container'
       style={{
+        margin: '0 auto',
+        maxWidth: 960,
       }}
+      className='header'
     >
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '1.45rem 1.0875rem',
-        }}
-        className='header'
+      <h1
+        className='site-info'
       >
-        <h1
-          className='site-info' style={{ margin: 0 }}
+        <Link
+          to='/'
+          className='site-info__title'
+          style={{ textDecoration: 'none' }}
         >
-          <Link
-            to='/'
-            className='site-info__title'
-            style={{ textDecoration: 'none' }}
-          >
-            {siteTitle}
-          </Link>
-          <a
-            className='site-info__github'
-            target='_blank'
-            href={'https://github.com/' + siteGithub}
-          >
-            @veryeasily
-          </a>
-        </h1>
-      </div>
+          {siteTitle}
+        </Link>
+        <a
+          className='site-info__github'
+          target='_blank'
+          href={'https://github.com/' + siteGithub}
+        >
+          @veryeasily
+        </a>
+      </h1>
     </div>
   )
 }
