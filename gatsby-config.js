@@ -3,6 +3,6 @@ module.exports = {
     github: 'veryeasily',
     title: 'Luke Underwood',
   },
-  pathPrefix: '/et-the-fog',
+  pathPrefix: '/public',
   plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-sass'],
 }
