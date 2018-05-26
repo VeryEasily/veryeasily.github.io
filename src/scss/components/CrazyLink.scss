@@ -1,0 +1,25 @@
+@import "../variables";
+
+.crazy-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-decoration: none;
+  line-height: 1.4;
+
+  &:hover {
+    color: $white;
+  }
+
+  &--title {
+    line-height: 1;
+  }
+
+  &__emoji {
+    font-size: 80px;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 50px;
+    }
+  }
+}

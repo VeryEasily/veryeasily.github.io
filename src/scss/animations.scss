@@ -4,9 +4,11 @@
   0% {
     background-color: mix($white, $cool-grey, 50%);
   }
+
   50% {
     background-color: mix($white, $warm-grey, 50%);
   }
+
   100% {
     background-color: mix($white, $cool-grey, 50%);
   }
@@ -16,9 +18,11 @@
   0% {
     background-color: mix($white, $warm-grey, 50%);
   }
+
   50% {
     background-color: mix($white, $cool-grey, 50%);
   }
+
   100% {
     background-color: mix($white, $warm-grey, 50%);
   }
@@ -28,15 +32,19 @@
   0% {
     opacity: 1;
   }
+
   25% {
     opacity: $opacity-amount;
   }
+
   50% {
     opacity: 1;
   }
+
   75% {
     opacity: $opacity-amount;
   }
+
   100% {
     opacity: 1;
   }

@@ -1,0 +1,36 @@
+@import "variables";
+
+.footer {
+  @extend %headline2;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 20px;
+  justify-content: flex-end;
+  margin: 0 auto 50px;
+  max-width: 960px;
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+
+  &__content {
+    @extend %headline2;
+  }
+
+  &__crazy-link {
+    font-size: 20px;
+    padding: 0 50px;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  & .crazy-link__emoji {
+    font-size: 20px;
+  }
+}
