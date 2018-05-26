@@ -10,27 +10,25 @@ import '../scss/index.scss'
 
 const Layout = ({ children, data }) => {
   return (
-    <div className="site">
-      <div className="site__top">
-        <Helmet
-        title={data.site.siteMetadata.title}
-        meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
-        ]}
-        link={[
-          { href: "https://fonts.googleapis.com/css?family=Mr+De+Haviland|Permanent+Marker", rel: "stylesheet" }
-        ]}
-        />
-        <Header
-          siteTitle={data.site.siteMetadata.title}
-          siteGithub={data.site.siteMetadata.github}>
-        </Header>
-        <MainLinkContainer />
-        <div className="article-body" >
-          {children()}
-        </div>
-      </div>
+    <div className="site-container__site site">
+      <Helmet
+      title={data.site.siteMetadata.title}
+      meta={[
+        { name: 'description', content: 'Sample' },
+        { name: 'keywords', content: 'sample, something' },
+      ]}
+      link={[
+        { href: "https://fonts.googleapis.com/css?family=Mr+De+Haviland|Permanent+Marker", rel: "stylesheet" }
+      ]}
+      />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        siteGithub={data.site.siteMetadata.github}>
+      </Header>
+      <MainLinkContainer />
+      <main className="main" >
+        {children()}
+      </main>
       <Footer />
     </div>
   )
