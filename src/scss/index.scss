@@ -763,19 +763,36 @@ pre tt:after {
   }
 }
 
+.footer {
+  @extend %headline2;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom:50px;
+  &__crazy-link {
+    font-size: 20px;
+    padding: 0 50px;
+    @media only screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  & .crazy-link__emoji {
+    font-size: 20px;
+  }
+}
+
 .crazy-link {
+
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-end;
   text-decoration: none;
   line-height: 1.4;
-  align-items: center;
 
   &--title {
     line-height: 1;
   }
 
   &__letter {
-    flex: 1 1 auto;
   }
 
   &__emoji {
@@ -790,9 +807,6 @@ pre tt:after {
   &__letter {
     flex: 1 1;
   }
-}
-
-.lju-wrapper {
 }
 
 .nav-wrapper {
