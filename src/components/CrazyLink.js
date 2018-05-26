@@ -40,7 +40,6 @@ export default class CrazyLink extends Component {
 
   render() {
     let linkClasses = classNames({
-      'home-page__link': true,
       'crazy-link': true
     }, this.props.className)
 

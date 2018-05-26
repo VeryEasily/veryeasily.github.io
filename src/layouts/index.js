@@ -4,13 +4,14 @@ import Helmet from 'react-helmet'
 import CrazyLink from '../components/CrazyLink'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import MainLinkContainer from '../components/MainLinkContainer'
 import '../scss/index.scss'
 
 const Layout = ({ children, data }) => {
   return (
-    <div className="main-background">
-      <div className="main-background__top">
+    <div className="site">
+      <div className="site__top">
         <Helmet
         title={data.site.siteMetadata.title}
         meta={[
@@ -30,11 +31,7 @@ const Layout = ({ children, data }) => {
           {children()}
         </div>
       </div>
-      {/* <footer className="main-background__bottom footer">
-          <span className="footer__content">
-          YOOOOOOOOOO
-          </span>
-        </footer> */}
+      <Footer />
     </div>
   )
 }

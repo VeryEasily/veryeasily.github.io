@@ -33,10 +33,10 @@ class IndexPage extends Component {
     ))
 
     return (
-      <div className='header'>
-        <div className='header__item lju-wrapper'>
+      <div className='indexpage'>
+      {/* <div className='header__item lju-wrapper'>
           <h1 className='crazy-link crazy-link--title header__title'>{title}</h1>
-        </div>
+        </div> */}
       </div>
     )
   }
