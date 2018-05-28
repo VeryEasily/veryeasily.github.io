@@ -14,28 +14,28 @@ $purple:     #9c27b0;
 $red:        #e91e63;
 $redorange:  #ff5722;
 
-$headline1-typeface: "Permanent Marker";
-$headline2-typeface: "Hack";
+$display1-typeface: "Permanent Marker";
+$display2-typeface: "Hack";
 
-%headline1-typography {
-  font-family: $headline1-typeface;
+%display1-font {
+  font-family: $display1-typeface;
   font-weight: normal;
 }
 
-%headline2-typography {
-  font-family: $headline2-typeface, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+%display2-font {
+  font-family: $display2-typeface, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
 }
 
 %headline1 {
-  @extend %headline1-typography;
+  @extend %display1-font;
 
   font-size: 40px;
   margin: 0;
 }
 
 %headline2 {
-  @extend %headline2-typography;
+  @extend %display2-font;
 
   font-size: 12pt;
   margin: 0;
