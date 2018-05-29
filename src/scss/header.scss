@@ -48,7 +48,23 @@
     @extend %display1-font;
 
     text-align: center;
-    font-size: 80px;
+    font-size: 50px;
+
+    transition: all 0.075s;
+
+    text-shadow: 1px 1px 1px mix($black, $red, 40%);
+
+    &:hover {
+      text-shadow: 2px 2px 1px mix($black, $red, 100%);
+    }
+
+    & .crazy-link__letter {
+      transition: all 0.075s;
+    }
+
+    &:hover .crazy-link__letter {
+      font-size: 80px;
+    }
 
     @media only screen and (max-width: 768px) {
       font-size: 50px;
@@ -56,7 +72,7 @@
   }
 }
 
-.art { color: $red; }
-.code { color: $lime-green; }
-.music { color: $music-blue; }
-.etc { color: $teal; }
+.art { color: $coolgrey; }
+.code { color: $coolgrey; }
+.music { color: $coolgrey; }
+.etc { color: $coolgrey; }

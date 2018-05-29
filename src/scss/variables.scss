@@ -1,21 +1,15 @@
 $opacity-amount: 1;
 
-$black:      #000;
-$white:      #fff;
-$warm-grey:  #9e9e9e;
-$cool-grey:  #607d8b;
+$black:      #262526;
+$white:      #F2F2F2;
+$warmgrey:  #8C8979;
+$coolgrey:  #404040;
 
-$blue:       #2196f3;
-$teal:       #009688;
-$green:      #8bc34a;
-$lime-green: #cddc39;
-$music-blue: #03a9f4;
-$purple:     #9c27b0;
-$red:        #e91e63;
-$redorange:  #ff5722;
+$red:        #F60A20;
+$lightred:   mix($white, $red, 60%);
 
 $display1-typeface: "Permanent Marker";
-$display2-typeface: "Hack";
+$display2-typeface: "Noto Sans";
 
 %display1-font {
   font-family: $display1-typeface;
@@ -39,4 +33,8 @@ $display2-typeface: "Hack";
 
   font-size: 12pt;
   margin: 0;
+}
+
+body {
+  @extend %display2-font;
 }

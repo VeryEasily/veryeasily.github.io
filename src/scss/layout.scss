@@ -14,35 +14,39 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  color: $warmgrey;
+}
+
 .site {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  animation: pulse-sides 15s infinite;
   height: inherit;
+  background: mix($white, $coolgrey, 75%);
 }
 
 .site-info {
   @extend %headline2;
 
   position: absolute;
-  top: 18%;
-  margin-left: 50px;
-  text-shadow: 0 0 10px #f00, 20px 20px 5px black;
+  top: 50px;
+  left: 50px;
+  text-decoration: underline $white;
 
   &__title {
-    color: black;
-    text-decoration: none;
+    color: $black;
   }
 
   &__github {
     @extend %headline2;
+    color: $warmgrey;
   }
 }
 
 .main {
-  animation: pulse-main 15s infinite;
+  background: $white;
   margin: 0 auto;
   max-width: 960px;
   min-height: 100%;

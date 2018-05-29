@@ -8,7 +8,7 @@
   line-height: 1.4;
 
   &:hover {
-    color: $white;
+    color: $red;
   }
 
   &--title {
@@ -16,7 +16,7 @@
   }
 
   &__emoji {
-    font-size: 80px;
+    font-size: 50px;
 
     @media only screen and (max-width: 768px) {
       font-size: 50px;

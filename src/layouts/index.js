@@ -18,7 +18,7 @@ const Layout = ({ children, data }) => {
         { name: 'keywords', content: 'sample, something' },
       ]}
       link={[
-        { href: "https://fonts.googleapis.com/css?family=Mr+De+Haviland|Permanent+Marker", rel: "stylesheet" }
+        { href: "https://fonts.googleapis.com/css?family=Noto+Sans|Permanent+Marker", rel: "stylesheet" }
       ]}
       />
       <Header
