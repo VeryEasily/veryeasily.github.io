@@ -1,2 +1,0 @@
-webpackJsonp([0xb9757534b5af],{212:function(e,t,u){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var l=u(2),a=n(l),f=u(21),r=(n(f),u(68)),d=(n(r),function(){return a.default.createElement("div",null,"MUSIC PAGE")});t.default=d,e.exports=t.default}});
-//# sourceMappingURL=component---src-pages-music-js-124df9fdd7c8bc81cc03.js.map
