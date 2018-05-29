@@ -22,8 +22,8 @@
   }
 
   &__crazy-link {
-    color: mix($pink, $blue, 20%);
-    font-size: 20px;
+    color: $pink;
+    font-size: 20pt;
     padding: 0 50px;
 
     @media only screen and (max-width: 768px) {

@@ -24,7 +24,7 @@ a {
   justify-content: space-between;
   overflow: hidden;
   height: inherit;
-  background: $white;
+  background: $blue;
 }
 
 .site-info {
@@ -34,17 +34,17 @@ a {
   top: 50px;
   left: 50px;
   text-decoration: underline;
-  background: $black;
+  background: $yellow;
   padding: 15px;
   border: 5px solid mix($black, $pink, 5%);
 
   &__title {
-    color: mix($black, $blue, 5%);
+    color: mix($black, $black, 5%);
   }
 
   &__github {
     @extend %headline2;
-    color: mix($black, $yellow, 5%);
+    color: mix($black, $black, 5%);
   }
 }
 
