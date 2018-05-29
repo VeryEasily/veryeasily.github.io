@@ -52,10 +52,10 @@
 
     transition: all 0.075s;
 
-    text-shadow: 1px 1px 1px mix($black, $blue, 40%);
+    text-shadow: 3px 3px 2px $black;
 
     &:hover {
-      text-shadow: 2px 2px 1px mix($black, $blue, 100%);
+      text-shadow: 3px 3px 2px $green, -3px -3px 1px $black;
     }
 
     & .crazy-link__letter {
@@ -63,6 +63,7 @@
     }
 
     &:hover .crazy-link__letter {
+      color: $orange;
       font-size: 80px;
     }
 
@@ -72,7 +73,7 @@
   }
 }
 
-.art { color: $green; }
-.code { color: $green; }
-.music { color: $green; }
-.etc { color: $green; }
+.art { color: $white; }
+.code { color: $white; }
+.music { color: $white; }
+.etc { color: $white; }
