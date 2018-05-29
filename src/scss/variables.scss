@@ -1,12 +1,15 @@
 $opacity-amount: 1;
 
-$black:      #262526;
-$white:      #F2F2F2;
-$warmgrey:  #8C8979;
-$coolgrey:  #404040;
+$black:  #111111;
+$white:  #ffffff;
 
-$red:        #F60A20;
-$lightred:   mix($white, $red, 60%);
+$pink:   #F41C54;
+$orange: #FF9F00;
+$yellow: #FBD506;
+$green:  #A8BF12;
+$blue:   #00AAB5;
+
+$lightblue:   mix($white, $blue, 60%);
 
 $display1-typeface: "Permanent Marker";
 $display2-typeface: "Noto Sans";

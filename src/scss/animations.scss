@@ -2,28 +2,28 @@
 
 @keyframes pulse-main {
   0% {
-    background-color: $white;
+    background-color: $orange;
   }
 
   50% {
-    background-color: $warmgrey;
+    background-color: $yellow;
   }
 
   100% {
-    background-color: $white;
+    background-color: $orange;
   }
 }
 
 @keyframes pulse-sides {
   0% {
-    background-color: $warmgrey;
+    background-color: $yellow;
   }
 
   50% {
-    background-color: $coolgrey;
+    background-color: $green;
   }
 
   100% {
-    background-color: $warmgrey;
+    background-color: $yellow;
   }
 }

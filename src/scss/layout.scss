@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: $warmgrey;
+  color: $yellow;
 }
 
 .site {
@@ -24,7 +24,7 @@ a {
   justify-content: space-between;
   overflow: hidden;
   height: inherit;
-  background: mix($white, $coolgrey, 75%);
+  background: $white;
 }
 
 .site-info {
@@ -33,20 +33,23 @@ a {
   position: absolute;
   top: 50px;
   left: 50px;
-  text-decoration: underline $white;
+  text-decoration: underline;
+  background: $black;
+  padding: 15px;
+  border: 5px solid mix($black, $pink, 5%);
 
   &__title {
-    color: $black;
+    color: mix($black, $blue, 5%);
   }
 
   &__github {
     @extend %headline2;
-    color: $warmgrey;
+    color: mix($black, $yellow, 5%);
   }
 }
 
 .main {
-  background: $white;
+  background: $orange;
   margin: 0 auto;
   max-width: 960px;
   min-height: 100%;

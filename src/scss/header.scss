@@ -52,10 +52,10 @@
 
     transition: all 0.075s;
 
-    text-shadow: 1px 1px 1px mix($black, $red, 40%);
+    text-shadow: 1px 1px 1px mix($black, $blue, 40%);
 
     &:hover {
-      text-shadow: 2px 2px 1px mix($black, $red, 100%);
+      text-shadow: 2px 2px 1px mix($black, $blue, 100%);
     }
 
     & .crazy-link__letter {
@@ -72,7 +72,7 @@
   }
 }
 
-.art { color: $coolgrey; }
-.code { color: $coolgrey; }
-.music { color: $coolgrey; }
-.etc { color: $coolgrey; }
+.art { color: $green; }
+.code { color: $green; }
+.music { color: $green; }
+.etc { color: $green; }
