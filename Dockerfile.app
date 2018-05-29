@@ -15,7 +15,7 @@ ADD [".tools/.vimrc*", ".tools/.vim", ".tools/screen-256color.ti", "entry-point.
 RUN tic ./screen-256color.ti && rm screen-256color.ti \
   && vim +PlugInstall +qall
 
-WORKDIR /app/elju
+WORKDIR /app/veryeasily
 EXPOSE 8000
 ENTRYPOINT ["/bin/sh", "/root/entry-point.sh"]
 CMD ["yarn", "develop"]
