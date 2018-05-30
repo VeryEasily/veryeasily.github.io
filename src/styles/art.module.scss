@@ -1,0 +1,23 @@
+@import "variables";
+@import "functions";
+
+.arts {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  &__art {
+    max-width: 640px;
+    margin: 30px;
+  }
+}
+
+.art {
+  transition: all 2s;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: translate3d(0);
+  transform: rotate3d(0, 0, 1, 90deg);
+  border: 1px solid #888;
+}
