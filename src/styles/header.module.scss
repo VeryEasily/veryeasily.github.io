@@ -2,32 +2,40 @@
 @import "functions";
 
 .header {
-  background-color: colors(1, 0);
-  &__title_wrapper {
+  margin-bottom: 15px;
+  //border-bottom: 1px solid colors(5);
+
+  // background-color: colors(1, 1);
+  &__outer_title {
     margin: 0 auto;
-    padding: 0.5rem 1rem;
     width: $desktop-width;
-    border: 3px solid $secondcolor;
-    background: $white;
+    //border: 1px solid colors(5);
   }
 }
 
-//
-// Mostly an experiment
-//
-// @mixin make-headers($color: 1) {
-//   @for $i from 1 through 5 {
-//     .header_#{$i} {
-//       @debug $i -3;
-//       background-color: colors($color, $i - 2);
-//     }
-//   }
-// }
-// 
-// @function get-header-color($color, $percent, $fn: 'tint') {
-//   $fn: get-function($fn);
-// 
-//   @return call(
-//     $fn, $color, $percent
-//   );
-// }
+.title_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  &__title {
+  }
+  &__link {
+    background: $white;
+    border: 1px solid transparent;
+    color: colors(1);
+    display: inline-block;
+    letter-spacing: 1pt;
+    margin: 50px;
+    padding: 3px 10px;
+    transition: border 0.1s;
+
+    &:visited {
+      color: colors(1);
+    }
+
+    &:hover {
+      border-color: colors(3);
+      color: colors(3);
+    }
+  }
+}

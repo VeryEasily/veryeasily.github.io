@@ -12,12 +12,39 @@ html {
 body {
   color: $textcolor;
   font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 16pt;
+  margin: 0;
 }
 
 a {
-  color: nth($colors, 3);
+  color: $black;
+  &:visited {
+    color: #444444;
+  }
+}
+
+body {
+  animation: 8s infinite color-cycle;
+}
+
+@keyframes color-cycle {
+  0% {
+    background-color: colors(1);
+  }
+  25% {
+    background-color: colors(2);
+  }
+  50% {
+    background-color: colors(3);
+  }
+  75% {
+    background-color: colors(4);
+  }
+  100% {
+    background-color: colors(1);
+  }
 }

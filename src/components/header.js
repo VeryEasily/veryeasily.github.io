@@ -20,9 +20,14 @@ const makeHeader = (pos, siteTitle) => {
   const headerClasses = classnames(styles.header, styles[`header_${pos}`])
   return (
     <div className={headerClasses} key={headerClasses}>
-      <div className={styles.header__title_wrapper}>
-        <h2>
-          <Link to="/">
+      <div
+        className={classnames(
+          styles.header__outer_title,
+          styles.title_box
+        )}
+      >
+        <h2 className={styles.title_box__title}>
+          <Link className={styles.title_box__link} to="/">
             {siteTitle}
           </Link>
         </h2>

@@ -10,14 +10,14 @@
 
 @function make-tints($color) {
   @return (
-    tint($color, 40%),
-    tint($color, 20%),
+    desaturate(shade($color, 20%), 5%),
+    desaturate(shade($color, 10%), 2.5%),
     tint($color, 0%),
-    shade($color, 20%),
-    shade($color, 40%)
+    saturate(tint($color, 15%), 50%),
+    saturate(tint($color, 30%), 100%)
   );
 }
 
-@function colors($num: 1, $shade: 0) {
-  @return nth(make-tints(nth($colors, $num)), $shade + 3);
+@function colors($num: 1, $shade: 3) {
+  @return nth(make-tints(nth($colors, $num)), $shade);
 }
