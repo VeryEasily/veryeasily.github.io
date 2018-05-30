@@ -48,3 +48,17 @@ body {
     background-color: colors(1);
   }
 }
+
+html, body, #___gatsby, div[data-reactroot] {
+  height: 100%;
+} 
+
+div[data-reactroot] {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+html, body {
+  overflow: hidden;
+}

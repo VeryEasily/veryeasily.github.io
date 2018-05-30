@@ -8,6 +8,8 @@ html {
 }
 
 .site__content {
-  width: $desktop-width;
+  width: 100%;
+  position: relative;
   margin: 0 auto;
+  flex: 1;
 }
