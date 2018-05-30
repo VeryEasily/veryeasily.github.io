@@ -14,6 +14,7 @@ export default class Art extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      active: false,
       styles: Art.getAPosition()
     }
     this.handleClick = this.handleClick.bind(this)
@@ -32,7 +33,9 @@ export default class Art extends Component {
   }
 
   handleClick() {
-    this.unregister()
+    this.setState({
+      active: !this.state.active
+    })
   }
 
   componentDidMount() {
@@ -57,13 +60,15 @@ export default class Art extends Component {
   }
 
   render() {
+    let classes = classnames(
+      styles.arts__art,
+      styles.art,
+      this.state.active && styles['art--active']
+    )
     return (
       <img
         onClick={this.handleClick}
-        className={classnames(
-          styles.arts__art,
-          styles.art
-        )}
+        className={classes}
         src={this.props.src}
         style={this.state.styles}
       />
