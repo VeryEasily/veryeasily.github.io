@@ -11,6 +11,7 @@
     "gatsby-plugin-sass": "^1.0.26",
     "lodash": "^4.17.10",
     "lost": "^8.2.1",
+    "normalize.css": "^8.0.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^11.1.0",
     "postcss-nested": "^3.0.0",

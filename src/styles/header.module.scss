@@ -1,0 +1,33 @@
+@import "variables";
+@import "functions";
+
+.header {
+  background-color: colors(1, 0);
+  &__title_wrapper {
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    width: $desktop-width;
+    border: 3px solid $secondcolor;
+    background: $white;
+  }
+}
+
+//
+// Mostly an experiment
+//
+// @mixin make-headers($color: 1) {
+//   @for $i from 1 through 5 {
+//     .header_#{$i} {
+//       @debug $i -3;
+//       background-color: colors($color, $i - 2);
+//     }
+//   }
+// }
+// 
+// @function get-header-color($color, $percent, $fn: 'tint') {
+//   $fn: get-function($fn);
+// 
+//   @return call(
+//     $fn, $color, $percent
+//   );
+// }

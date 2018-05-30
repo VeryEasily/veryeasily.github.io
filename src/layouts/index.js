@@ -3,21 +3,28 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
-import '../scss/index.scss'
+import '../styles/index.scss'
+import styles from '../styles/layout.module.scss'
 
 const Layout = ({ children, data }) => (
-  <div className="site">
+  <div className={styles.site}>
     <Helmet
       title={data.site.siteMetadata.title}
+      link={[
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Open+Sans'
+        }
+      ]}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <div className="site__header">
+    <div className={styles.site__header}>
       <Header siteTitle={data.site.siteMetadata.title} />
     </div>
-    <div className="site__body main-content">
+    <div className={styles.site__content}>
       {children()}
     </div>
   </div>

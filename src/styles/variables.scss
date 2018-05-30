@@ -1,0 +1,17 @@
+$desktop-width: 960px;
+
+$red: #FF6B6B;
+$green: #C7F464;
+$aqua: #4ECDC4;
+$yellow: #ffff6f;
+$white: rgb(253, 253, 253);
+$black: rgb(26, 14, 0);
+
+$firstcolor: $red;
+$secondcolor: $green;
+$thirdcolor: $aqua;
+$fourthcolor: $yellow;
+$fifthcolor: $black;
+$textcolor: $black;
+
+$colors: ($firstcolor, $secondcolor, $thirdcolor, $fourthcolor, $fifthcolor);

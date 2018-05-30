@@ -1,0 +1,23 @@
+@import "normalize";
+@import "variables";
+@import "layout.module";
+@import "functions";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  color: $textcolor;
+  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16pt;
+}
+
+a {
+  color: nth($colors, 3);
+}
