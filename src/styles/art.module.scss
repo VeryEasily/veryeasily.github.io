@@ -15,7 +15,7 @@
 
 .art {
   background: red;
-  transition: all 0.5s;
+  transition: all 1s;
   position: absolute;
   border: 1px solid #888;
   transform: translateZ(0);
@@ -23,6 +23,7 @@
   max-height: 100%;
   cursor: zoom-in;
   &--active {
+    transition: all 0.6s;
     transform: rotate3d(0, 0, 0, 0deg) translateZ(10000px) !important;
     cursor: zoom-out;
   }
