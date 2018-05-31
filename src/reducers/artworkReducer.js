@@ -1,5 +1,4 @@
-import { FOCUS_ARTWORK } from '../helpers/constants'
-import R from 'ramda'
+import { TOGGLE_ART_FOCUS } from '../helpers/constants'
 
 const INITIAL_STATE = {
   active: null
@@ -8,11 +7,14 @@ const INITIAL_STATE = {
 const artworkReducer = (prevState, action) => {
   if (typeof prevState === 'undefined') { return INITIAL_STATE }
   switch (action.type) {
-    case FOCUS_ARTWORK:
-      return R.clone(prevState)
+    case TOGGLE_ART_FOCUS:
+      return {
+        ...prevState,
+        activeId: action.art.activeId
+      }
     default:
       return undefined
   }
 }
 
-export artworkReducer
+export default artworkReducer

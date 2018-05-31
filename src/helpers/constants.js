@@ -1,1 +1,1 @@
-export const FOCUS_ARTWORK = 'ARTWORK_CLICKED'
+export const TOGGLE_ART_FOCUS = 'TOGGLE_ART_FOCUS'

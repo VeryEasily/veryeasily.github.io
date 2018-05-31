@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import styles from '../styles/art.module.scss'
-import Art from './art'
+import ArtContainer from './ArtContainer'
 import classnames from 'classnames'
+import shortid from 'shortid'
 
 const IMG_LIST = [
   'https://c1.staticflickr.com/6/5338/9288760247_6153e06904_c.jpg',
@@ -19,7 +20,6 @@ export default class Artworks extends Component {
 
   componentDidMount() {
     setTimeout(() => {
-      console.debug('setTimeout: ', this)
       this.setState({
         artworksHeight: this.artworksRef.clientHeight,
         artworksWidth: this.artworksRef.clientWidth
@@ -32,8 +32,9 @@ export default class Artworks extends Component {
     const width = this.state.artworksWidth
     const arts = this.artworksRef ? IMG_LIST.map((url, i) => {
       return (
-        <Art
-          key={url}
+        <ArtContainer
+          key={i}
+          id={i}
           src={url}
           maxHeight={this.state.artworksHeight}
           maxWidth={this.state.artworksWidth}

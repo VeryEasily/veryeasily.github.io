@@ -1,5 +1,5 @@
-import { FOCUS_ARTWORK } from '../helpers/constants'
+import { TOGGLE_ART_FOCUS } from '../helpers/constants'
 
 export function focusArtwork(art) {
-  return { type: FOCUS_ARTWORK, art }
+  return { type: TOGGLE_ART_FOCUS, art }
 }

@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   margin: 30px 0;
+  perspective: 1000000px;
   &__art {
   }
 }
@@ -21,7 +22,7 @@
   max-width: $desktop-width;
   max-height: 100%;
   &--active {
-    transform: rotate3d(0, 0, 0, 0deg) translateZ(5000px) !important;
+    transform: rotate3d(0, 0, 0, 0deg) translateZ(10000px) !important;
   }
 }
 
