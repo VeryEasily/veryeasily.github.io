@@ -24,8 +24,10 @@ const Layout = ({ children, data }) => (
     <div className={styles.site__header}>
       <Header siteTitle={data.site.siteMetadata.title} />
     </div>
-    <div className={styles.site__content}>
-      {children()}
+    <div className={styles.main}>
+      <div className={styles.main__area}>
+        {children()}
+      </div>
     </div>
   </div>
 )
@@ -35,13 +37,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

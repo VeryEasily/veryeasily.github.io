@@ -4,10 +4,13 @@ import classnames from 'classnames'
 
 export default class Art extends Component {
   static getAPosition() {
+    const top = Math.floor(Math.random()*300)
+    const left = Math.floor(Math.random()*1500)
+    const back = Math.floor(Math.random()*-5000)
     return {
-      top: Math.floor(Math.random()*500),
-      left: Math.floor(Math.random()*1000),
-      transform: `rotate3d(${Math.random()},${Math.random()},${Math.random()},${Math.floor(Math.random()*180)}deg)`
+      transform:
+`translate3d(${left}px,${top}px,${back}px) `+
+`rotate3d(${Math.random()},${Math.random()},${Math.random()},${Math.floor(Math.random()*180)}deg)`
     }
   }
 
@@ -70,7 +73,11 @@ export default class Art extends Component {
         onClick={this.handleClick}
         className={classes}
         src={this.props.src}
-        style={this.state.styles}
+        style={{
+          ...this.state.styles,
+          ...{
+          }
+        }}
       />
     )
   }

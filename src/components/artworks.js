@@ -17,12 +17,39 @@ export default class Artworks extends Component {
     this.state = {}
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      console.debug('setTimeout: ', this)
+      this.setState({
+        artworksHeight: this.artworksRef.clientHeight,
+        artworksWidth: this.artworksRef.clientWidth
+      })
+    }, 0)
+  }
+
   render() {
+    const height = this.state.artworksHeight
+    const width = this.state.artworksWidth
+    const arts = this.artworksRef ? IMG_LIST.map((url, i) => {
+      return (
+        <Art
+          key={url}
+          src={url}
+          maxHeight={this.state.artworksHeight}
+          maxWidth={this.state.artworksWidth}
+        />
+      )
+    }) : []
+
     return (
-      <div className={styles.arts}>
-        {IMG_LIST.map((url, i) => (
-          <Art key={url} src={url} />
-        ))}
+      <div
+        ref={elt => this.artworksRef = elt}
+        className={classnames(
+          styles.arts,
+          this.props.className
+        )}
+      >
+        {arts}
       </div>
     )
   }

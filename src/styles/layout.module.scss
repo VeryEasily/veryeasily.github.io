@@ -7,9 +7,19 @@ html {
 .site__header {
 }
 
-.site__content {
+.main {
   width: 100%;
   position: relative;
-  margin: 0 auto;
   flex: 1;
+  padding: 0 50px;
+
+  @media only screen and (max-width: $mobile-width) {
+    padding: 0 20px;
+  }
+
+  &__area {
+    margin: 0 auto;
+    max-width: $desktop-width;
+    width: 100%;
+  }
 }
