@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "author": "Luke Underwood <very.very.easily@gmail.com>",
   "dependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
     "classnames": "^2.2.5",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",

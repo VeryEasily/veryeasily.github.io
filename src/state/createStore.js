@@ -1,5 +1,5 @@
 import { combineReducers, createStore as reduxCreateStore } from 'redux'
-import artworkReducer from './artworkReducer'
+import artworkReducer from '../reducers/artworkReducer'
 
 const rootReducer = combineReducers({
   artwork: artworkReducer

@@ -1,20 +1,11 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
-
- // You can delete this file if you're not using it
-
 import React from 'react'
 import { Router } from 'react-router-dom'
 import { Provider } from 'react-redux'
 
-import createStore from './src/reducers/createStore'
+import createStore from './src/state/createStore'
 
 exports.replaceRouterComponent = ({ history }) => {
     const store = createStore()
-    debugger
 
     const ConnectedRouterWrapper = ({ children }) => (
         <Provider store={store}>
@@ -24,3 +15,4 @@ exports.replaceRouterComponent = ({ history }) => {
 
     return ConnectedRouterWrapper
 }
+
