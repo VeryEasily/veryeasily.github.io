@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import ArtworksContainer, { IMG_LIST } from '../components/ArtworksContainer'
 import styles from '../styles/art.module.scss'
 
-const SecondPage = () => {
+const ArtPage = () => {
   return (
     <div className={styles.artPage}>
       <div className={styles.artPage__mainArea}>
@@ -14,4 +14,4 @@ const SecondPage = () => {
   )
 }
 
-export default SecondPage
+export default ArtPage
