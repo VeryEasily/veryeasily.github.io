@@ -8,7 +8,7 @@
   // background-color: colors(1, 1);
   &__outer_title {
     margin: 0 auto;
-    width: $desktop-width;
+    max-width: $desktop-width;
     //border: 1px solid colors(5);
   }
 }
