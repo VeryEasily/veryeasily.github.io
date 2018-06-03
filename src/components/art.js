@@ -3,9 +3,11 @@ import styles from '../styles/art.module.scss'
 import classnames from 'classnames'
 
 export default class Art extends Component {
-  static getAPosition() {
-    const top = Math.floor(Math.random()*300) - 150
-    const left = Math.floor(Math.random()*1500) - 750
+  getAPosition() {
+    const leftDist = this.props.window.width
+    const topDist = this.props.window.height
+    const top = Math.floor(Math.random()*topDist) - (topDist/2)
+    const left = Math.floor(Math.random()*leftDist) - (leftDist/2)
     const back = Math.floor(Math.random()* -10)
     return {
       transform:
@@ -18,7 +20,7 @@ export default class Art extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      styles: Art.getAPosition()
+      styles: this.getAPosition()
     }
   }
 
@@ -44,13 +46,13 @@ export default class Art extends Component {
 
   updatePosition() {
     console.log({
-      ...Art.getAPosition(),
+      ...this.getAPosition(),
       ...this.state.styles
     })
     this.setState({
       styles: {
         ...this.state.styles,
-        ...Art.getAPosition()
+        ...this.getAPosition()
       }
     })
   }

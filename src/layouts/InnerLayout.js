@@ -1,14 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
-import '../styles/index.scss'
 import styles from '../styles/layout.module.scss'
-import { WrappedWindowSizeContext } from './WindowSizeContext'
 
-const Layout = ({ children, data }) => (
-  <WrappedWindowSizeContext>
+const InnerLayout = ({ children, data }) => {
+  debugger
+  return (
     <div className={styles.site}>
       <Helmet
         title={data.site.siteMetadata.title}
@@ -28,25 +27,11 @@ const Layout = ({ children, data }) => (
       </div>
       <div className={styles.main}>
         <div className={styles.main__area}>
-          {children()}
+          {children}
         </div>
       </div>
     </div>
-  </WrappedWindowSizeContext>
-)
-
-Layout.propTypes = {
-  children: PropTypes.func,
+  )
 }
 
-export default Layout
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+export default InnerLayout
