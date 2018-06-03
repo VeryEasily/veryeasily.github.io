@@ -63,6 +63,12 @@ export default class Art extends Component {
     })
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.window === this.props.window) { return }
+    this.unregister()
+    this.register()
+  }
+
   render() {
     let classes = classnames(
       styles.arts__art,
