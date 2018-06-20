@@ -1,0 +1,52 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-a3e61c2e9d1eff7939f0.js",
+      "component---src-pages-index-js-a3e61c2e9d1eff7939f0.js.map"
+    ],
+    "path---": [
+      "path----ba7eccb520af82e4bf30.js",
+      "path----ba7eccb520af82e4bf30.js.map"
+    ],
+    "path---art": [
+      "path---art-a0e39f21c11f6a62c5ab.js",
+      "path---art-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-f6ffda896cc248ee7a4c.js",
+      "component---src-layouts-index-js-f6ffda896cc248ee7a4c.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-b9b55d3740ae2f6c37cd.js",
+      "build-js-styles.css",
+      "commons-b9b55d3740ae2f6c37cd.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-06176675003ae8116571.js",
+      "build-js-styles.css",
+      "app-06176675003ae8116571.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-art-js": [
+      "component---src-pages-art-js-e5311b89607e038f681c.js",
+      "component---src-pages-art-js-e5311b89607e038f681c.js.map"
+    ]
+  }
+}
