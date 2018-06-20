@@ -9,7 +9,7 @@ yarn-error.log*
 .cache
 
 # Build directory
-/tmp-public
+/public
 .DS_Store
 
 # Runtime data
