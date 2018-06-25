@@ -25,6 +25,9 @@ const makeHeader = (pos, siteTitle) => {
           <Link className={styles.title_box__link} to="/">
             {siteTitle}
           </Link>
+          <Link className={styles.title_box__link} to="/art/">
+            art
+          </Link>
         </h2>
       </div>
     </div>

@@ -6,7 +6,6 @@ const IndexPage = () => (
   <div className={styles['index-page']}>
     <h1>hey!!</h1>
     <p>this is where i plan to put stuff i do!</p>
-    <Link to="/art/">page 2</Link>
   </div>
 )
 
