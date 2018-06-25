@@ -1,4 +1,3 @@
-// hi
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
@@ -7,6 +6,8 @@ import Header from '../components/header'
 import '../styles/index.scss'
 import styles from '../styles/layout.module.scss'
 import { WrappedWindowSizeContext } from './WindowSizeContext'
+
+const RANDOM_UPDATE = "hi"
 
 const Layout = ({ children, data }) => (
   <WrappedWindowSizeContext>
