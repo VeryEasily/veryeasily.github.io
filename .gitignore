@@ -10,6 +10,7 @@ yarn-error.log*
 
 # Build directory
 .DS_Store
+/public
 
 # Runtime data
 pids
