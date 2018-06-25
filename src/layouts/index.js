@@ -43,6 +43,8 @@ Layout.propTypes = {
 
 export default Layout
 
+console.log(RANDOM_UPDATE)
+
 export const query = graphql`
   query SiteTitleQuery {
     site {
